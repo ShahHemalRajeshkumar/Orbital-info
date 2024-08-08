@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  color: #efefef; 
+  line-height: 1.7;
+  font-size: 19px;
+  background-color: #222222;
+  background-image: url("https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014146/runaway_black_hole_desktop.png");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); 
+  justify-content: center;
+}
+
+.link {
+  color: #efefef; 
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: #f59494;
+  transform: scale(1.1);
+}
+
+.nasa-photo {
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+  align-items: flex-start; 
+}
+
+.nasa-photo img {
+  width: 50%;
+  margin-right: 50px; 
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo-content {
+  display: flex;
+  flex-direction: column; 
+  max-width: 50%; 
+}
+
+.nasa-photo h1 {
+  margin-top: 0;
+  margin-bottom: 10px; 
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+  margin-bottom: 20px; 
+  color: #f5f5f5;
+}
+
+.nasa-photo .explanation {
+  color: #cccccc; 
+  margin-top: 20px; 
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .nasa-photo-content {
+    max-width: 100%;
+  }
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  font-size: 40px;
+  background: #f59494;
+  display: inline-block;
+  padding: 40px 80px;
+  color: #222222; 
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.home-link:hover {
+  background: #d14f4f;
+  color: #222222;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease all;
+}
