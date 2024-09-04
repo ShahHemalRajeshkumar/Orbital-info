@@ -25,7 +25,7 @@ export default function NasaPhoto() {
         <>
  <NavBar />
 <div className="nasa-photo">
-    {photoData.media_type == "image" ? (
+    {photoData.media_type === "image" ? (
     <img src={photoData.url} alt={photoData.title} className="photo" />
     ) : (
         <iframe
